@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+body {
+    background-color: #161616;
+    color: #f8f8f8;
+    font-family: "Koulen", sans-serif;
+}
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.heading-text-container {
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    text-align: center;
+    height: auto;
+}
+
+.heading-text-container h1 {
+    font-size: 700%;
+    background: linear-gradient(90deg, rgb(255, 139, 230), #f8f8f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateText 8s linear infinite;
+}
+
+@keyframes animateText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.hero-btn-container {
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(255, 139, 230);
+    border: 2px solid rgb(255, 139, 230);
+    padding: 1%;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+   background: none;
+   border: 2px solid rgb(255, 139, 230);
+}
+.btn:hover {
+    background: none;
+}
+.btn-outline:hover {
+    background: rgb(255, 139, 230);
+}
